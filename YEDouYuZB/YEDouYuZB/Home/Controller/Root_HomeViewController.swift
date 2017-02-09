@@ -31,29 +31,14 @@ extension Root_HomeViewController{
     fileprivate func setNavigationBar(){
         
         //1. 设置左侧的item
-        let leftBtn = UIButton()
-        leftBtn.setImage(UIImage(named:"logo"), for: .normal)
-        leftBtn.sizeToFit()
-        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: leftBtn)
+        navigationItem.leftBarButtonItem = UIBarButtonItem(imageName: "logo", highImageName: "", size: CGSize.zero)
         
         //2. 设置右侧的item
-        let history = UIButton()
-        history.sizeToFit()
-        history.setImage(UIImage(named:"image_my_history"), for: .normal)
-        history.setImage(UIImage(named:"Image_my_history_click"), for: .highlighted)
-        let historyItem = UIBarButtonItem(customView: history)
-       
-        let search = UIButton()
-        search.sizeToFit()
-        search.setImage(UIImage(named:"btn_search"), for: .normal)
-        search.setImage(UIImage(named:"btn_search_clicked"), for: .highlighted)
-        let searchItem = UIBarButtonItem(customView: search)
-        
-        let qrcoder = UIButton()
-        qrcoder.sizeToFit()
-        qrcoder.setImage(UIImage(named:"Image_scan"), for: .normal)
-        qrcoder.setImage(UIImage(named:"Image_scan_click"), for: .highlighted)
-        let qrcoderItem = UIBarButtonItem(customView: qrcoder)
+        let size = CGSize(width: 40, height: 40)
+        let historyItem = UIBarButtonItem(imageName: "image_my_history", highImageName: "image_my_history_click", size: size)
+        let searchItem = UIBarButtonItem(imageName: "btn_search", highImageName: "btn_search_clicked", size: size)
+        let qrcoderItem = UIBarButtonItem(imageName: "image_scan", highImageName: "image_scan_click", size: size)
+        // let qrcoderItem = UIBarButtonItem.creatItem(imageName: "image_scan", highImageName: "image_scan_click", size: size)
     
         navigationItem.rightBarButtonItems = [historyItem, searchItem, qrcoderItem]
         
