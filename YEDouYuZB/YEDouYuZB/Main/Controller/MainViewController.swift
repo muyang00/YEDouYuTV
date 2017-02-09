@@ -8,7 +8,7 @@
 
 /*
  
- 这里是不使用Refactor to Storyboard,适配ios 8 使用的方法， 这里暂不用;
+ 这里是不使用Refactor to Storyboard,适配ios 8 使用的方法， 现在暂不考虑适配ios8 ，所以这里的类暂不用;
  如果使用就可以和Main.Storyboard进行关联，并且删除Main.Storyboard后面的四个小框就可以
  
  */
