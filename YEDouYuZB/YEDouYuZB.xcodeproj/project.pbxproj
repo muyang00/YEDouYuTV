@@ -22,6 +22,11 @@
 		B4480F021E4C0864003D9FA6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4480F011E4C0864003D9FA6 /* MainViewController.swift */; };
 		B4480F041E4C14CF003D9FA6 /* Root_HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4480F031E4C14CF003D9FA6 /* Root_HomeViewController.swift */; };
 		B4480F091E4C1698003D9FA6 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4480F081E4C1698003D9FA6 /* UIBarButtonItem+Extension.swift */; };
+		B4D093521E4D5161006F63DB /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D093511E4D5161006F63DB /* UIColor+Extension.swift */; };
+		B4D093541E4D5183006F63DB /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D093531E4D5183006F63DB /* NSDate+Extension.swift */; };
+		B4D093561E4D52FA006F63DB /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D093551E4D52FA006F63DB /* Common.swift */; };
+		B4D093581E4D53B7006F63DB /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D093571E4D53B7006F63DB /* PageTitleView.swift */; };
+		B4D0935A1E4D53D3006F63DB /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D093591E4D53D3006F63DB /* PageContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +68,11 @@
 		B4480F011E4C0864003D9FA6 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B4480F031E4C14CF003D9FA6 /* Root_HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Root_HomeViewController.swift; sourceTree = "<group>"; };
 		B4480F081E4C1698003D9FA6 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		B4D093511E4D5161006F63DB /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		B4D093531E4D5183006F63DB /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
+		B4D093551E4D52FA006F63DB /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		B4D093571E4D53B7006F63DB /* PageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
+		B4D093591E4D53D3006F63DB /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -274,6 +284,8 @@
 		B4480EFB1E4C0715003D9FA6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B4D093571E4D53B7006F63DB /* PageTitleView.swift */,
+				B4D093591E4D53D3006F63DB /* PageContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -313,6 +325,7 @@
 		B4480F001E4C0715003D9FA6 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				B4D093551E4D52FA006F63DB /* Common.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -329,6 +342,7 @@
 		B4480F061E4C1662003D9FA6 /* NS_Prefix */ = {
 			isa = PBXGroup;
 			children = (
+				B4D093531E4D5183006F63DB /* NSDate+Extension.swift */,
 			);
 			path = NS_Prefix;
 			sourceTree = "<group>";
@@ -337,6 +351,7 @@
 			isa = PBXGroup;
 			children = (
 				B4480F081E4C1698003D9FA6 /* UIBarButtonItem+Extension.swift */,
+				B4D093511E4D5161006F63DB /* UIColor+Extension.swift */,
 			);
 			path = UI_Prefix;
 			sourceTree = "<group>";
@@ -480,11 +495,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4D093561E4D52FA006F63DB /* Common.swift in Sources */,
 				B4480F021E4C0864003D9FA6 /* MainViewController.swift in Sources */,
 				B4480EB61E4BFFD2003D9FA6 /* YEDouYuZB.xcdatamodeld in Sources */,
+				B4D0935A1E4D53D3006F63DB /* PageContentView.swift in Sources */,
 				B4480F091E4C1698003D9FA6 /* UIBarButtonItem+Extension.swift in Sources */,
+				B4D093521E4D5161006F63DB /* UIColor+Extension.swift in Sources */,
 				B4480EAE1E4BFFD1003D9FA6 /* AppDelegate.swift in Sources */,
+				B4D093581E4D53B7006F63DB /* PageTitleView.swift in Sources */,
 				B4480F041E4C14CF003D9FA6 /* Root_HomeViewController.swift in Sources */,
+				B4D093541E4D5183006F63DB /* NSDate+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -770,6 +790,7 @@
 				B4480ED71E4BFFD2003D9FA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B4480ED81E4BFFD2003D9FA6 /* Build configuration list for PBXNativeTarget "YEDouYuZBTests" */ = {
 			isa = XCConfigurationList;
@@ -778,6 +799,7 @@
 				B4480EDA1E4BFFD2003D9FA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B4480EDB1E4BFFD2003D9FA6 /* Build configuration list for PBXNativeTarget "YEDouYuZBUITests" */ = {
 			isa = XCConfigurationList;
@@ -786,6 +808,7 @@
 				B4480EDD1E4BFFD2003D9FA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
