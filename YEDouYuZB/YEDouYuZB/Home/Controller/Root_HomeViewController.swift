@@ -21,6 +21,23 @@ class Root_HomeViewController: UIViewController {
         return titleView
     }()
     
+    
+    fileprivate lazy var pageContentView : PageContentView = {[weak self] in
+        //1. 确定内容的frame
+        let contentH = kScreenH - kStatusBarH - kNavigationBarH - kTitleViewH - kTabbarH
+        let contentFrame = CGRect(x: 0, y: kStatusBarH + kNavigationBarH + kTitleViewH, width: kScreenW, height: contentH)
+        
+        //2. 添加所有的子控制器
+        var childVcs = [UIViewController]()
+        childVcs.append(RecommendViewController())
+        childVcs.append(GameViewController())
+        childVcs.append(AmuseViewController())
+        childVcs.append(FunnyViewController())
+        let contentView = PageContentView(frame: contentFrame, childVcs: childVcs, parentViewController: self)
+        
+        return contentView
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //设置界面
@@ -42,6 +59,9 @@ extension Root_HomeViewController{
         
         //2. 添加pageTitleView
         view.addSubview(pageTitleView)
+        
+        //3. 添加pageContentView
+        view.addSubview(pageContentView)
         
     }
     
