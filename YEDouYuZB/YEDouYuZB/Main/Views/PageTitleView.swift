@@ -129,7 +129,6 @@ extension PageTitleView {
         print("\(tapGes)")
         
     }
-    
 }
 
 
