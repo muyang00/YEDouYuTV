@@ -8,6 +8,12 @@
 
 import UIKit
 
+//MARK:- 定义协议
+protocol PageTitleViewDelegate : class {
+    func pageTitleView (_ titleView : PageTitleView, selectedIndex index : Int)
+}
+
+
 //MARK:- 定义常量
 
 private let kScrollLineH : CGFloat = 2
@@ -23,6 +29,8 @@ class PageTitleView: UIView {
     
     //MARK:- 定义属性
     fileprivate var titles : [String]
+    fileprivate var currentIndex : Int = 0
+    weak var delegate : PageTitleViewDelegate?
     
     //MARK:- 懒加载属性
     fileprivate lazy var titleLabels : [UILabel] = [UILabel]()
@@ -52,7 +60,7 @@ class PageTitleView: UIView {
     }
 
 }
-
+//MARK:- 设置UI界面
 extension PageTitleView {
     
     func setupUI() {
@@ -97,11 +105,6 @@ extension PageTitleView {
             label.addGestureRecognizer(tapGes)
         
         }
-        
-        
-        
-        
-    
     }
     
     fileprivate func setupBotttomLineAndScrollLine(){
@@ -128,8 +131,57 @@ extension PageTitleView {
         
         print("\(tapGes)")
         
+        //0. 获取当前Label
+        guard let currentLabel = tapGes.view as? UILabel else {
+            return
+        }
+        //1. 如果是重复点击同一个Title， 那么直接返回
+        if currentLabel.tag == currentIndex{ return }
+        
+        //2. 获取之前的Label
+        let oldLabel = titleLabels[currentIndex]
+        
+        //3.切换文字的颜色
+        currentLabel.textColor = UIColor(r: kSelectColor.0, g: kSelectColor.1, b: kSelectColor.2)
+        oldLabel.textColor = UIColor(r: kNornamlColor.0, g: kNornamlColor.1, b: kNornamlColor.2)
+        //4. 保存最新Label的下标值
+        currentIndex = currentLabel.tag
+        
+        //5.滚动条位置发生改变
+        let scrollLineX = CGFloat(currentIndex) * scrollLine.frame.width
+ 
+        UIView.animate(withDuration: 0.15, animations: {
+            self.scrollLine.frame.origin.x = scrollLineX
+        })
+        
+        //6. 通知代理
+        delegate?.pageTitleView(self, selectedIndex: currentIndex)
     }
 }
 
+//MARK:- 对外暴露的方法
+extension PageTitleView {
+    func setTitleWithProgress(_ progress : CGFloat, sourceIndex : Int, targetIndex : Int){
+        
+        //1. 取出sourceLabel/targetLabel
+        let sourceLabel = titleLabels[sourceIndex]
+        let targetLabel = titleLabels[targetIndex]
+        
+        //2. 处理滑块的逻辑
+        let moveTotalX = targetLabel.frame.origin.x - sourceLabel.frame.origin.x
+        let moveX = moveTotalX * progress
+        scrollLine.frame.origin.x = sourceLabel.frame.origin.x + moveX
+        
+        //3. 颜色的渐变
+        //3.1 取出变化的范围
+        let colorDelta = (kSelectColor.0 - kNornamlColor.0, kSelectColor.1 - kNornamlColor.1, kSelectColor.2 - kSelectColor.2)
+        //3.2 变化sourceLabel
+        sourceLabel.textColor = UIColor(r: kSelectColor.0 - colorDelta.0 * progress, g: kSelectColor.1 - colorDelta.1 * progress, b: kSelectColor.2 - colorDelta.2 * progress)
+        //3.2 变化targetLabel
+        targetLabel.textColor = UIColor(r: kNornamlColor.0 - colorDelta.0 * progress, g: kNornamlColor.1 - colorDelta.1 * progress, b: kNornamlColor.2 - colorDelta.2 * progress)
+        //4. 记录最新的index
+        currentIndex = targetIndex
+    }
+}
 
 

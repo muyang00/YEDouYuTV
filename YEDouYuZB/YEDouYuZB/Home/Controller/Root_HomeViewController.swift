@@ -15,9 +15,9 @@ class Root_HomeViewController: UIViewController {
     // MARK:- 懒加载属性
     fileprivate lazy var pageTitleView : PageTitleView = {[weak self] in
         let titleFrame = CGRect(x: 0, y: kStatusBarH + kNavigationBarH, width: kScreenW, height: kTitleViewH)
-        let titles = ["推荐", "手游", "游戏", "娱乐", "趣玩"]
+        let titles = ["推荐", "游戏", "娱乐", "趣玩"]
         let titleView = PageTitleView(frame: titleFrame, titles: titles)
-        
+        titleView.delegate = self
         return titleView
     }()
     
@@ -34,7 +34,7 @@ class Root_HomeViewController: UIViewController {
         childVcs.append(AmuseViewController())
         childVcs.append(FunnyViewController())
         let contentView = PageContentView(frame: contentFrame, childVcs: childVcs, parentViewController: self)
-        
+        contentView.delegate = self
         return contentView
     }()
     
@@ -82,3 +82,19 @@ extension Root_HomeViewController{
     }
     
 }
+
+//MARK:- 遵守PageTitleViewDelegate
+extension Root_HomeViewController : PageTitleViewDelegate {
+    func pageTitleView(_ titleView: PageTitleView, selectedIndex index: Int) {
+        pageContentView.setCurrentIndex(index)
+    }
+}
+
+extension Root_HomeViewController : PageContentViewDelegate {
+    func pageContentView(_ contentView: PageContentView, progress: CGFloat, sourceIndex: Int, targetIndex: Int) {
+        pageTitleView.setTitleWithProgress(progress, sourceIndex: sourceIndex, targetIndex: targetIndex)
+    }
+}
+
+
+
