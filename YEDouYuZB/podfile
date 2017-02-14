@@ -1,18 +1,7 @@
-# Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
 
 target 'YEDouYuZB' do
-   use_frameworks!
-pod 'Alamofire', '~> 4.0.1'
-  
-target 'YEDouYuZBTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'YEDouYuZBUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+use_frameworks!
+  pod 'Alamofire', '~> 4.0.1'
+  pod 'Kingfisher', '~> 3.1.1'
 
 end
