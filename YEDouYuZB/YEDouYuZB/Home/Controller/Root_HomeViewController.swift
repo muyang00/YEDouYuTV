@@ -96,5 +96,13 @@ extension Root_HomeViewController : PageContentViewDelegate {
     }
 }
 
-
+/*
+ 如果知道区间内的每一项的值，可以使用下划线(_)来替代变量名忽略对值的访问：
+ 
+ let string = "HelloWorld!"
+ let subString = (string as NSString).substring(with: NSMakeRange(1, 5))
+ 
+ 使用as关键字将string当作NSString类型的对象使用
+ 
+ */
 
