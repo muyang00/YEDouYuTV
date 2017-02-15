@@ -31,6 +31,9 @@
 		B46977431E53E88B005078B9 /* RecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46977421E53E88B005078B9 /* RecommendViewModel.swift */; };
 		B46977451E53F52A005078B9 /* CycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46977441E53F52A005078B9 /* CycleModel.swift */; };
 		B46977471E53F539005078B9 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46977461E53F539005078B9 /* GameModel.swift */; };
+		B49405BD1E543A8D009C1CBD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49405BC1E543A8D009C1CBD /* BaseViewController.swift */; };
+		B49405BF1E543AA8009C1CBD /* BaseAnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49405BE1E543AA8009C1CBD /* BaseAnchorViewController.swift */; };
+		B49405C11E543ADE009C1CBD /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49405C01E543ADE009C1CBD /* CustomNavigationController.swift */; };
 		B4D093521E4D5161006F63DB /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D093511E4D5161006F63DB /* UIColor+Extension.swift */; };
 		B4D093541E4D5183006F63DB /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D093531E4D5183006F63DB /* NSDate+Extension.swift */; };
 		B4D093561E4D52FA006F63DB /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D093551E4D52FA006F63DB /* Common.swift */; };
@@ -94,6 +97,9 @@
 		B46977421E53E88B005078B9 /* RecommendViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewModel.swift; sourceTree = "<group>"; };
 		B46977441E53F52A005078B9 /* CycleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CycleModel.swift; sourceTree = "<group>"; };
 		B46977461E53F539005078B9 /* GameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		B49405BC1E543A8D009C1CBD /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		B49405BE1E543AA8009C1CBD /* BaseAnchorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAnchorViewController.swift; sourceTree = "<group>"; };
+		B49405C01E543ADE009C1CBD /* CustomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		B4D093511E4D5161006F63DB /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		B4D093531E4D5183006F63DB /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
 		B4D093551E4D52FA006F63DB /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
@@ -328,6 +334,9 @@
 			children = (
 				B4480EB11E4BFFD1003D9FA6 /* Main.storyboard */,
 				B4480F011E4C0864003D9FA6 /* MainViewController.swift */,
+				B49405BC1E543A8D009C1CBD /* BaseViewController.swift */,
+				B49405BE1E543AA8009C1CBD /* BaseAnchorViewController.swift */,
+				B49405C01E543ADE009C1CBD /* CustomNavigationController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -637,8 +646,10 @@
 				B4D093561E4D52FA006F63DB /* Common.swift in Sources */,
 				B4480F021E4C0864003D9FA6 /* MainViewController.swift in Sources */,
 				B46977411E53E7FF005078B9 /* AnchorModel.swift in Sources */,
+				B49405BD1E543A8D009C1CBD /* BaseViewController.swift in Sources */,
 				B4480EB61E4BFFD2003D9FA6 /* YEDouYuZB.xcdatamodeld in Sources */,
 				B4D093621E4DA949006F63DB /* FunnyViewController.swift in Sources */,
+				B49405BF1E543AA8009C1CBD /* BaseAnchorViewController.swift in Sources */,
 				B4D0935A1E4D53D3006F63DB /* PageContentView.swift in Sources */,
 				B46977451E53F52A005078B9 /* CycleModel.swift in Sources */,
 				B469773D1E53E7D6005078B9 /* BaseGameModel.swift in Sources */,
@@ -648,6 +659,7 @@
 				B4480F091E4C1698003D9FA6 /* UIBarButtonItem+Extension.swift in Sources */,
 				B4D093521E4D5161006F63DB /* UIColor+Extension.swift in Sources */,
 				B4365C2A1E51A3F2009F5237 /* NetworkTools.swift in Sources */,
+				B49405C11E543ADE009C1CBD /* CustomNavigationController.swift in Sources */,
 				B46977431E53E88B005078B9 /* RecommendViewModel.swift in Sources */,
 				B4480EAE1E4BFFD1003D9FA6 /* AppDelegate.swift in Sources */,
 				B4D093601E4DA936006F63DB /* AmuseViewController.swift in Sources */,
