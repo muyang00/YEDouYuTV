@@ -67,9 +67,10 @@ extension PageContentView {
             parentViewController?.addChildViewController(childVcs)
         }
         //2.添加UICollectionView, 用于在Cell中存放控制器的View
-        addSubview(collectionView)
+      
         collectionView.backgroundColor = UIColor.white
         collectionView.frame = bounds
+        addSubview(collectionView)
     }
 }
 
@@ -90,7 +91,7 @@ extension PageContentView : UICollectionViewDataSource {
         let childVc = childVcs[(indexPath as IndexPath).item]
         childVc.view.frame = cell.contentView.bounds
         cell.contentView.addSubview(childVc.view)
-        
+        cell.backgroundColor = UIColor.randomColor()
         return cell
     }
     

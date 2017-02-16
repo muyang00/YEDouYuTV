@@ -20,7 +20,7 @@ extension UIBarButtonItem {
     }
     */
     // 遍历构造函数: 1> convenience开头 2> 在构造函数中必须明确强调用一个设计的构造函数（self）
-    //3> 便利构造函数不能被重写或者使用super调用父类的构造函数 4> 不能被继承
+
     convenience init(imageName: String, highImageName: String = "", size: CGSize = CGSize.zero) {
         //1.创建UIBUtton
         let btn = UIButton()
