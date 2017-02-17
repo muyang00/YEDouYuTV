@@ -100,6 +100,7 @@ extension PageContentView : UICollectionViewDataSource {
 // MARK:- 遵守UICollectionViewDelegate
 extension PageContentView : UICollectionViewDelegate {
     
+    
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         isForbidScrollDelegate = false
         startOffsetX = scrollView.contentOffset.x
