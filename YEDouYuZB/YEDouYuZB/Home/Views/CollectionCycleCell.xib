@@ -50,6 +50,10 @@
                 <constraint firstItem="rz2-Pv-bbe" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="qhH-wy-TYY"/>
             </constraints>
             <size key="customSize" width="287" height="165"/>
+            <connections>
+                <outlet property="iconImageView" destination="f7k-FY-4vk" id="2c8-np-zXu"/>
+                <outlet property="titleLabel" destination="g8h-gX-UcM" id="MTP-p8-vXV"/>
+            </connections>
             <point key="canvasLocation" x="23.5" y="25.5"/>
         </collectionViewCell>
     </objects>
