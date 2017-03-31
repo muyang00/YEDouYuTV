@@ -8,13 +8,14 @@
 
 import UIKit
 
-class CollectionNormalCell: UICollectionViewCell {
+class CollectionNormalCell: CollectionBaseCell {
  
     @IBOutlet weak var roomNameLabel: UILabel!
 
-    @IBOutlet weak var iconImageView: UIImageView!
-    @IBOutlet weak var nickNameLabel: UILabel!
-    @IBOutlet weak var onlineBtn: UIButton!
-    
-    
+    override var anchor: AnchorModel? {
+        didSet{
+            super.anchor = anchor
+            roomNameLabel.text = anchor?.room_name
+        }
+    }
 }
