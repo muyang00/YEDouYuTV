@@ -21,7 +21,7 @@ class CollectionBaseCell: UICollectionViewCell {
             
             var onlineStr : String = ""
             if anchor.online >= 10000 {
-                onlineStr = "\(Int(anchor.online / 10000))万在线"
+              onlineStr = "\(Int(anchor.online / 10000))万在线"
             }else{
                 onlineStr = "\(anchor.online)在线"
             }

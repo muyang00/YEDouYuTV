@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0C392E7DB52A16BA292B99D7 /* Pods_YEDouYuZB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88050EC0EFFA08F90D477660 /* Pods_YEDouYuZB.framework */; };
+		B4209C531E8F523C00030408 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4209C521E8F523C00030408 /* GameViewModel.swift */; };
 		B4365C2A1E51A3F2009F5237 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4365C291E51A3F2009F5237 /* NetworkTools.swift */; };
 		B444576A1E8E01B700489431 /* RecommendCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44457691E8E01B700489431 /* RecommendCycleView.swift */; };
 		B444576C1E8E01D200489431 /* RecommendCycleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B444576B1E8E01D200489431 /* RecommendCycleView.xib */; };
@@ -83,6 +84,7 @@
 		88050EC0EFFA08F90D477660 /* Pods_YEDouYuZB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YEDouYuZB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9530FB48084B55256EA1EC84 /* Pods_YEDouYuZBTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YEDouYuZBTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B310A777F646D70BF65F2B38 /* Pods_YEDouYuZBUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YEDouYuZBUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4209C521E8F523C00030408 /* GameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		B4365C291E51A3F2009F5237 /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
 		B44457691E8E01B700489431 /* RecommendCycleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendCycleView.swift; sourceTree = "<group>"; };
 		B444576B1E8E01D200489431 /* RecommendCycleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendCycleView.xib; sourceTree = "<group>"; };
@@ -494,6 +496,7 @@
 			isa = PBXGroup;
 			children = (
 				B46977421E53E88B005078B9 /* RecommendViewModel.swift */,
+				B4209C521E8F523C00030408 /* GameViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -719,6 +722,7 @@
 				B46977431E53E88B005078B9 /* RecommendViewModel.swift in Sources */,
 				B4480EAE1E4BFFD1003D9FA6 /* AppDelegate.swift in Sources */,
 				B4D093601E4DA936006F63DB /* AmuseViewController.swift in Sources */,
+				B4209C531E8F523C00030408 /* GameViewModel.swift in Sources */,
 				B4D093581E4D53B7006F63DB /* PageTitleView.swift in Sources */,
 				B4480F041E4C14CF003D9FA6 /* Root_HomeViewController.swift in Sources */,
 				B47766091E8E37CC00270ED8 /* CollectionGameCell.swift in Sources */,

@@ -99,6 +99,19 @@ extension RecommendViewController{
             
             self.collectionView.reloadData()
             
+            var groups = self.recommendVM.anchorGroups;
+            //移除两组没用的数据
+            groups.removeFirst()
+            groups.removeFirst()
+            
+            //添加更多按钮
+            let moreGroup = AnchorGroup()
+            moreGroup.tag_name = "更多"
+            groups.append(moreGroup)
+            
+            self.gameView.groups = groups
+            
+            
         }
         
         recommendVM.requestCycleData {

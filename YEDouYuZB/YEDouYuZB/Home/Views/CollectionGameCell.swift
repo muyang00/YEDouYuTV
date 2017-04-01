@@ -10,9 +10,18 @@ import UIKit
 
 class CollectionGameCell: UICollectionViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBOutlet weak var iconImageView: UIImageView!
+    @IBOutlet weak var titleNameLabel: UILabel!
+    
+    var baseGame: BaseGameModel? {
+        didSet{
+            titleNameLabel.text = baseGame?.tag_name
+            
+            if let loadURL = URL(string: baseGame?.icon_url ?? ""){
+                iconImageView.kf.setImage(with: loadURL)
+            }else{
+                iconImageView.image = UIImage(named: "home_more_btn")
+            }
+        }
     }
-
 }
