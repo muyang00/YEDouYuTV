@@ -35,12 +35,14 @@
                         </constraints>
                     </imageView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0M-Xx-FZ9">
-                        <rect key="frame" x="178" y="5" width="70" height="16"/>
+                        <rect key="frame" x="178" y="126" width="70" height="16"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="16" id="yO2-lh-oPF"/>
+                            <constraint firstAttribute="height" constant="16" id="q0i-84-f5R"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                        <state key="normal" title="66666人在线"/>
+                        <state key="normal" title="66666人在线">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="永恩IT学习" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HZc-sv-a0b">
                         <rect key="frame" x="0.0" y="137" width="65" height="16"/>
@@ -62,7 +64,6 @@
             <constraints>
                 <constraint firstItem="C0m-Fp-pIE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="034-tR-kp5"/>
                 <constraint firstItem="6uk-Ka-f6d" firstAttribute="top" secondItem="C0m-Fp-pIE" secondAttribute="bottom" constant="5" id="0kE-ns-DsZ"/>
-                <constraint firstAttribute="trailing" secondItem="H0M-Xx-FZ9" secondAttribute="trailing" constant="5" id="2wx-pi-F3P"/>
                 <constraint firstItem="HZc-sv-a0b" firstAttribute="leading" secondItem="C0m-Fp-pIE" secondAttribute="leading" id="6ax-Z2-eas"/>
                 <constraint firstItem="8Bo-dt-oyc" firstAttribute="top" secondItem="6uk-Ka-f6d" secondAttribute="top" id="6ng-cA-w0H"/>
                 <constraint firstItem="C0m-Fp-pIE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="CBK-Rc-bSF"/>
@@ -71,7 +72,8 @@
                 <constraint firstAttribute="trailing" secondItem="C0m-Fp-pIE" secondAttribute="trailing" id="Vyb-Vr-0MB"/>
                 <constraint firstAttribute="trailing" secondItem="8Bo-dt-oyc" secondAttribute="trailing" constant="5" id="WPb-Cy-zt6"/>
                 <constraint firstItem="8Bo-dt-oyc" firstAttribute="leading" secondItem="6uk-Ka-f6d" secondAttribute="trailing" constant="5" id="oKK-qO-VjL"/>
-                <constraint firstItem="H0M-Xx-FZ9" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="s0l-YK-rLc"/>
+                <constraint firstAttribute="trailing" secondItem="H0M-Xx-FZ9" secondAttribute="trailing" constant="5" id="qjW-cL-zBL"/>
+                <constraint firstItem="8Bo-dt-oyc" firstAttribute="top" secondItem="H0M-Xx-FZ9" secondAttribute="bottom" constant="16" id="qvn-FA-HYv"/>
                 <constraint firstItem="HZc-sv-a0b" firstAttribute="bottom" secondItem="C0m-Fp-pIE" secondAttribute="bottom" id="vfF-cJ-zIz"/>
             </constraints>
             <connections>
