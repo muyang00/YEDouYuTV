@@ -10,8 +10,15 @@ import UIKit
 
 let kAmuseCellID = "kAmuseCellID"
 class CollectionAmuseHeadCell: UICollectionViewCell {
-
-    @IBOutlet weak var collectionView: UICollectionView!
+    
+   @IBOutlet weak var collectionView: UICollectionView!
+    
+    var groups : [AnchorGroup]? {
+        didSet{
+            collectionView.reloadData()
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -29,13 +36,20 @@ class CollectionAmuseHeadCell: UICollectionViewCell {
 
 extension CollectionAmuseHeadCell : UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 8
+        return groups?.count ?? 0
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kAmuseCellID, for: indexPath) as! CollectionGameCell
-        cell.backgroundColor = UIColor.red
+        //cell.backgroundColor = UIColor.randomColor()
+        
+        cell.baseGame = self.groups![indexPath.item]
+        cell.clipsToBounds = true
         
         return cell
     }
 }
-
+extension CollectionAmuseHeadCell : UICollectionViewDelegate{
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("CollectionAmuseHeadCell")
+    }
+}

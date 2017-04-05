@@ -38,6 +38,7 @@ extension FunnyViewController {
         baseVM = funnyVM
         funnyVM.loadFunnyData {
             self.collectionView.reloadData()
+             self.loadDataFinished()
         }
     }
 }

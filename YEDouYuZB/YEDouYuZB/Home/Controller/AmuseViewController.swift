@@ -43,7 +43,7 @@ extension AmuseViewController {
             var tempGroups = self.amuseVM.anchorGroups
             tempGroups.removeFirst()
             self.amuseView.groups = tempGroups
-            
+             self.loadDataFinished()
         }
     }
 }

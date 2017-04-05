@@ -20,7 +20,7 @@ private let kNormalCellID = "kNormalCellID"
 private let kHeaderViewID = "kHeaderViewID"
 let kPrettyCellID = "kPrettyCellID"
 
-class BaseAnchorViewController: UIViewController {
+class BaseAnchorViewController: BaseViewController {
     
     var baseVM : BaseViewModel!
     
@@ -56,8 +56,12 @@ class BaseAnchorViewController: UIViewController {
 
 extension BaseAnchorViewController {
     
-    func setupUI() {
+   override func setupUI() {
+    
+        contentView = collectionView
+    
         view.addSubview(collectionView)
+        super.setupUI()
     }
 }
 
@@ -101,9 +105,19 @@ extension BaseAnchorViewController : UICollectionViewDataSource{
 extension BaseAnchorViewController : UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("indexPath", indexPath)
+        print("BaseAnchorViewController ---- ", indexPath)
+        let anchor = baseVM.anchorGroups[indexPath.section].anchors[indexPath.item]
+        anchor.isVertical == 0 ? pushNormalRoomVC() : presentShowRoomVC()
+        
     }
-    
+    private func pushNormalRoomVC(){
+        let normalVC = RoomNormalViewController()
+        navigationController?.pushViewController(normalVC, animated: true)
+    }
+    private func presentShowRoomVC(){
+        let presentVC = RoomShowViewController()
+        present(presentVC, animated: true, completion: nil)
+    }
 }
 
 

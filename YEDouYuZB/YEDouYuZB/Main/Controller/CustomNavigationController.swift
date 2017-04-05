@@ -29,9 +29,7 @@ class CustomNavigationController: UINavigationController {
 //        }
         
         let targets = systemGes.value(forKey: "_targets") as? [NSObject]
-        guard let targetObjc = targets?.first else {
-            return
-        }
+        guard let targetObjc = targets?.first else { return }
         
         //3.2 取出target
         guard let target = targetObjc.value(forKey: "target") else {
@@ -52,6 +50,5 @@ class CustomNavigationController: UINavigationController {
         viewController.hidesBottomBarWhenPushed = true
         super.pushViewController(viewController, animated: animated)
     }
-    
 
 }
