@@ -31,6 +31,7 @@ class GameViewController: BaseViewController {
         let collectionView = UICollectionView(frame: self.view.bounds, collectionViewLayout: layout)
         collectionView.backgroundColor = UIColor.white
         collectionView.dataSource = self
+        collectionView.delegate = self
         collectionView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         collectionView.register(UINib(nibName: "CollectionGameCell", bundle: nil), forCellWithReuseIdentifier: kGameCellID)
         collectionView.register(UINib(nibName: "CollectionHeaderView", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: kHeaderViewID)
@@ -109,3 +110,10 @@ extension GameViewController : UICollectionViewDataSource {
     }
     
 }
+
+extension GameViewController : UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("GameViewController ---- ", indexPath)
+    }
+}
+

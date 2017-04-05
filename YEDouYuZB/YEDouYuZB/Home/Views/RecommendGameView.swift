@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol RecommendGameViewDelegate : class {
+    func recommendGameView(_ recommendView : RecommendGameView, index: Int)
+}
+
 private let kGameCellID = "kGameCellID"
 private let kEdgeInsetMargin : CGFloat = 10
 
@@ -52,6 +56,12 @@ extension RecommendGameView : UICollectionViewDataSource {
         cell.baseGame = self.groups![(indexPath as IndexPath).item]
         
         return cell
+    }
+}
+
+extension RecommendGameView : UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("RecommendGameView ----", indexPath)
     }
 }
 
