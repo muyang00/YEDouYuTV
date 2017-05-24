@@ -2,6 +2,12 @@
 target 'YEDouYuZB' do
 use_frameworks!
   pod 'Alamofire', '~> 4.0.1'
-  pod 'Kingfisher', '~> 3.1.1'
+  pod 'Kingfisher', '~> 3.2.1'
+  
+  pod 'LFLiveKit', '~> 2.5'
 
+  pod 'SwiftyJSON', '~> 3.1.1'
+
+  pod 'MJRefresh', '~> 3.1.12'
+  
 end

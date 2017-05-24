@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0C392E7DB52A16BA292B99D7 /* Pods_YEDouYuZB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88050EC0EFFA08F90D477660 /* Pods_YEDouYuZB.framework */; };
+		B40AED7F1ED567BF008ED334 /* LiveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40AED7E1ED567BF008ED334 /* LiveModel.swift */; };
+		B40AED811ED567E0008ED334 /* LiveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40AED801ED567E0008ED334 /* LiveViewModel.swift */; };
+		B40AED831ED5868F008ED334 /* Live_DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40AED821ED5868F008ED334 /* Live_DetailViewController.swift */; };
+		B40AED8A1ED58AB1008ED334 /* LiveTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40AED891ED58AB1008ED334 /* LiveTopView.swift */; };
+		B40AED8C1ED58AC5008ED334 /* LiveTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B40AED8B1ED58AC5008ED334 /* LiveTopView.xib */; };
 		B4209C531E8F523C00030408 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4209C521E8F523C00030408 /* GameViewModel.swift */; };
 		B4209C551E8F8E5100030408 /* AmuseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4209C541E8F8E5100030408 /* AmuseViewModel.swift */; };
 		B4209C571E8F8E5F00030408 /* FunnyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4209C561E8F8E5F00030408 /* FunnyViewModel.swift */; };
@@ -16,6 +21,9 @@
 		B4209C5E1E8F967600030408 /* CollectionAmuseHeadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4209C5C1E8F967600030408 /* CollectionAmuseHeadCell.swift */; };
 		B4209C5F1E8F967600030408 /* CollectionAmuseHeadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4209C5D1E8F967600030408 /* CollectionAmuseHeadCell.xib */; };
 		B4365C2A1E51A3F2009F5237 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4365C291E51A3F2009F5237 /* NetworkTools.swift */; };
+		B443939B1ED52D0900F285F1 /* Root_LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B443939A1ED52D0900F285F1 /* Root_LiveViewController.swift */; };
+		B443939E1ED537E400F285F1 /* LiveListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B443939C1ED537E400F285F1 /* LiveListViewCell.swift */; };
+		B443939F1ED537E400F285F1 /* LiveListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B443939D1ED537E400F285F1 /* LiveListViewCell.xib */; };
 		B444576A1E8E01B700489431 /* RecommendCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44457691E8E01B700489431 /* RecommendCycleView.swift */; };
 		B444576C1E8E01D200489431 /* RecommendCycleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B444576B1E8E01D200489431 /* RecommendCycleView.xib */; };
 		B444576F1E8E026400489431 /* CollectionCycleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B444576D1E8E026400489431 /* CollectionCycleCell.swift */; };
@@ -92,6 +100,11 @@
 		88050EC0EFFA08F90D477660 /* Pods_YEDouYuZB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YEDouYuZB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9530FB48084B55256EA1EC84 /* Pods_YEDouYuZBTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YEDouYuZBTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B310A777F646D70BF65F2B38 /* Pods_YEDouYuZBUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YEDouYuZBUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B40AED7E1ED567BF008ED334 /* LiveModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveModel.swift; sourceTree = "<group>"; };
+		B40AED801ED567E0008ED334 /* LiveViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveViewModel.swift; sourceTree = "<group>"; };
+		B40AED821ED5868F008ED334 /* Live_DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Live_DetailViewController.swift; sourceTree = "<group>"; };
+		B40AED891ED58AB1008ED334 /* LiveTopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveTopView.swift; sourceTree = "<group>"; };
+		B40AED8B1ED58AC5008ED334 /* LiveTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LiveTopView.xib; sourceTree = "<group>"; };
 		B4209C521E8F523C00030408 /* GameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		B4209C541E8F8E5100030408 /* AmuseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmuseViewModel.swift; sourceTree = "<group>"; };
 		B4209C561E8F8E5F00030408 /* FunnyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnyViewModel.swift; sourceTree = "<group>"; };
@@ -100,6 +113,9 @@
 		B4209C5C1E8F967600030408 /* CollectionAmuseHeadCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionAmuseHeadCell.swift; sourceTree = "<group>"; };
 		B4209C5D1E8F967600030408 /* CollectionAmuseHeadCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionAmuseHeadCell.xib; sourceTree = "<group>"; };
 		B4365C291E51A3F2009F5237 /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		B443939A1ED52D0900F285F1 /* Root_LiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Root_LiveViewController.swift; sourceTree = "<group>"; };
+		B443939C1ED537E400F285F1 /* LiveListViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveListViewCell.swift; sourceTree = "<group>"; };
+		B443939D1ED537E400F285F1 /* LiveListViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LiveListViewCell.xib; sourceTree = "<group>"; };
 		B44457691E8E01B700489431 /* RecommendCycleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendCycleView.swift; sourceTree = "<group>"; };
 		B444576B1E8E01D200489431 /* RecommendCycleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendCycleView.xib; sourceTree = "<group>"; };
 		B444576D1E8E026400489431 /* CollectionCycleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionCycleCell.swift; sourceTree = "<group>"; };
@@ -199,6 +215,43 @@
 			children = (
 			);
 			path = Libs;
+			sourceTree = "<group>";
+		};
+		B44393961ED52CD500F285F1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B40AED801ED567E0008ED334 /* LiveViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B44393971ED52CD500F285F1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B40AED7E1ED567BF008ED334 /* LiveModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B44393981ED52CD500F285F1 /* Controlls */ = {
+			isa = PBXGroup;
+			children = (
+				B47CCBDA1E94905900BDBF2F /* Live.storyboard */,
+				B443939A1ED52D0900F285F1 /* Root_LiveViewController.swift */,
+				B40AED821ED5868F008ED334 /* Live_DetailViewController.swift */,
+			);
+			path = Controlls;
+			sourceTree = "<group>";
+		};
+		B44393991ED52CD500F285F1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B443939C1ED537E400F285F1 /* LiveListViewCell.swift */,
+				B443939D1ED537E400F285F1 /* LiveListViewCell.xib */,
+				B40AED891ED58AB1008ED334 /* LiveTopView.swift */,
+				B40AED8B1ED58AC5008ED334 /* LiveTopView.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		B4480EA11E4BFFD1003D9FA6 = {
@@ -352,33 +405,12 @@
 		B4480EF41E4C0715003D9FA6 /* Live */ = {
 			isa = PBXGroup;
 			children = (
-				B4480EF61E4C0715003D9FA6 /* Models */,
-				B4480EF71E4C0715003D9FA6 /* Views */,
-				B4480EF51E4C0715003D9FA6 /* Controller */,
+				B44393961ED52CD500F285F1 /* ViewModels */,
+				B44393991ED52CD500F285F1 /* Views */,
+				B44393971ED52CD500F285F1 /* Models */,
+				B44393981ED52CD500F285F1 /* Controlls */,
 			);
 			path = Live;
-			sourceTree = "<group>";
-		};
-		B4480EF51E4C0715003D9FA6 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				B47CCBDA1E94905900BDBF2F /* Live.storyboard */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		B4480EF61E4C0715003D9FA6 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		B4480EF71E4C0715003D9FA6 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		B4480EF81E4C0715003D9FA6 /* Main */ = {
@@ -604,6 +636,7 @@
 				TargetAttributes = {
 					B4480EA91E4BFFD1003D9FA6 = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 4BKR5AQD46;
 						ProvisioningStyle = Automatic;
 					};
 					B4480EC01E4BFFD2003D9FA6 = {
@@ -647,6 +680,7 @@
 				B4480EEB1E4C0487003D9FA6 /* Images.xcassets in Resources */,
 				B477660A1E8E37CC00270ED8 /* CollectionGameCell.xib in Resources */,
 				B46B85D91E8CF350006534F9 /* CollectionNormalCell.xib in Resources */,
+				B443939F1ED537E400F285F1 /* LiveListViewCell.xib in Resources */,
 				B4480EB81E4BFFD2003D9FA6 /* Assets.xcassets in Resources */,
 				B4480EB31E4BFFD1003D9FA6 /* Main.storyboard in Resources */,
 				B47766041E8E371800270ED8 /* RecommendGameView.xib in Resources */,
@@ -659,6 +693,7 @@
 				B47CCBE21E94906E00BDBF2F /* Profile.storyboard in Resources */,
 				B4209C5F1E8F967600030408 /* CollectionAmuseHeadCell.xib in Resources */,
 				B44457701E8E026400489431 /* CollectionCycleCell.xib in Resources */,
+				B40AED8C1ED58AC5008ED334 /* LiveTopView.xib in Resources */,
 				B48F534D1E55A51500496C54 /* CollectionHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -692,7 +727,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		338E60F2F516F50E30023A18 /* [CP] Copy Pods Resources */ = {
@@ -738,6 +773,7 @@
 				B46977411E53E7FF005078B9 /* AnchorModel.swift in Sources */,
 				B49405BD1E543A8D009C1CBD /* BaseViewController.swift in Sources */,
 				B47CCBE51E9490F600BDBF2F /* RoomShowViewController.swift in Sources */,
+				B443939E1ED537E400F285F1 /* LiveListViewCell.swift in Sources */,
 				B4480EB61E4BFFD2003D9FA6 /* YEDouYuZB.xcdatamodeld in Sources */,
 				B4D093621E4DA949006F63DB /* FunnyViewController.swift in Sources */,
 				B444576F1E8E026400489431 /* CollectionCycleCell.swift in Sources */,
@@ -752,6 +788,7 @@
 				B4D0935E1E4DA7D5006F63DB /* GameViewController.swift in Sources */,
 				B46B85DC1E8CF36E006534F9 /* CollectionPrettyCell.swift in Sources */,
 				B4209C551E8F8E5100030408 /* AmuseViewModel.swift in Sources */,
+				B40AED831ED5868F008ED334 /* Live_DetailViewController.swift in Sources */,
 				B4480F091E4C1698003D9FA6 /* UIBarButtonItem+Extension.swift in Sources */,
 				B4D093521E4D5161006F63DB /* UIColor+Extension.swift in Sources */,
 				B4365C2A1E51A3F2009F5237 /* NetworkTools.swift in Sources */,
@@ -762,16 +799,20 @@
 				B4D093601E4DA936006F63DB /* AmuseViewController.swift in Sources */,
 				B4209C531E8F523C00030408 /* GameViewModel.swift in Sources */,
 				B4D093581E4D53B7006F63DB /* PageTitleView.swift in Sources */,
+				B443939B1ED52D0900F285F1 /* Root_LiveViewController.swift in Sources */,
 				B4480F041E4C14CF003D9FA6 /* Root_HomeViewController.swift in Sources */,
 				B47766091E8E37CC00270ED8 /* CollectionGameCell.swift in Sources */,
+				B40AED811ED567E0008ED334 /* LiveViewModel.swift in Sources */,
 				B4D093541E4D5183006F63DB /* NSDate+Extension.swift in Sources */,
 				B48F534C1E55A51500496C54 /* CollectionHeaderView.swift in Sources */,
 				B4209C571E8F8E5F00030408 /* FunnyViewModel.swift in Sources */,
 				B444576A1E8E01B700489431 /* RecommendCycleView.swift in Sources */,
 				B4D0935C1E4DA7C4006F63DB /* RecommendViewController.swift in Sources */,
 				B46B85DF1E8CF88C006534F9 /* CollectionBaseCell.swift in Sources */,
+				B40AED8A1ED58AB1008ED334 /* LiveTopView.swift in Sources */,
 				B47CCBE71E94911300BDBF2F /* RoomNormalViewController.swift in Sources */,
 				B46977471E53F539005078B9 /* GameModel.swift in Sources */,
+				B40AED7F1ED567BF008ED334 /* LiveModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -839,6 +880,7 @@
 				B47CCBDB1E94905900BDBF2F /* Base */,
 			);
 			name = Live.storyboard;
+			path = ../Controller;
 			sourceTree = "<group>";
 		};
 		B47CCBDD1E94906400BDBF2F /* Discover.storyboard */ = {
@@ -957,6 +999,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 4BKR5AQD46;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YEDouYuZB/Other",
+				);
 				INFOPLIST_FILE = YEDouYuZB/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -973,6 +1020,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 4BKR5AQD46;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YEDouYuZB/Other",
+				);
 				INFOPLIST_FILE = YEDouYuZB/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

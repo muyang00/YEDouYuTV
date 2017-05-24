@@ -14,6 +14,15 @@ class RoomShowViewController: UIViewController {
         super.viewDidLoad()
 
         view.backgroundColor = UIColor.purple
+        
+        let tap = UITapGestureRecognizer()
+        tap.addTarget(self, action: #selector(tapAction))
+        view.addGestureRecognizer(tap)
     }
-
+    
+    func tapAction() {
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
 }
