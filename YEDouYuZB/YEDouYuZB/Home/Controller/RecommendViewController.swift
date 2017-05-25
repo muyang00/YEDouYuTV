@@ -97,6 +97,16 @@ extension RecommendViewController : UICollectionViewDelegateFlowLayout{
              return CGSize(width: kNormalItemW, height: kNormalItemH)
         }
     }
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+       
+        let presentVC = RoomShowViewController()
+        
+        presentVC.anchorModel = baseVM.anchorGroups[indexPath.row]
+        
+        present(presentVC, animated: true, completion: nil)
+
+        
+    }
     
 }
 
