@@ -38,7 +38,7 @@ extension BaseViewController {
         
         //1.
         contentView?.isHidden = true
-        
+        animImageView.isUserInteractionEnabled = false
         //2. 添加执行动画的UIImageView
         view.addSubview(animImageView)
         
@@ -56,6 +56,7 @@ extension BaseViewController {
         animImageView.isHidden = true
         //3.
         contentView?.isHidden = false
+        
     }
 }
 

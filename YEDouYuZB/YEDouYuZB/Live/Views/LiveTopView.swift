@@ -12,13 +12,29 @@ class LiveTopView: UIView {
 
     @IBOutlet weak var topIcon: UIImageView!
 
+    @IBOutlet weak var backBtn: UIButton!
     @IBOutlet weak var topCollectionView: UICollectionView!
 
-    
-    @IBAction func backClickAction(_ sender: UIButton) {
-    
+    var anchors : LiveModel? {
+        didSet {
+            guard let anchors = anchors else {
+                return
+            }
+            var imageUrl = anchors.userInfo?.portrait
+            // 处理图片地址
+            if imageUrl?.hasPrefix("http://img2.inke.cn/") == false {
+                imageUrl = "http://img2.inke.cn/" + (anchors.userInfo?.portrait)!
+            }
+            
+            if let url = URL(string: imageUrl ?? "") {
+                topIcon.kf.setImage(with: url, placeholder: UIImage(named: "avatar_default"))
+            }else {
+                topIcon.image = UIImage(named: "avatar_default")
+            }
+        }
     }
     
+
     
     
     

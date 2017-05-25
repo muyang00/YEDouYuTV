@@ -40,6 +40,7 @@
 		B4480F021E4C0864003D9FA6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4480F011E4C0864003D9FA6 /* MainViewController.swift */; };
 		B4480F041E4C14CF003D9FA6 /* Root_HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4480F031E4C14CF003D9FA6 /* Root_HomeViewController.swift */; };
 		B4480F091E4C1698003D9FA6 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4480F081E4C1698003D9FA6 /* UIBarButtonItem+Extension.swift */; };
+		B462A0041ED66A0800D68BE5 /* YEDomain.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B462A0021ED66A0800D68BE5 /* YEDomain.bundle */; };
 		B469773B1E53E7BE005078B9 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B469773A1E53E7BE005078B9 /* BaseViewModel.swift */; };
 		B469773D1E53E7D6005078B9 /* BaseGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B469773C1E53E7D6005078B9 /* BaseGameModel.swift */; };
 		B469773F1E53E7EF005078B9 /* AnchorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B469773E1E53E7EF005078B9 /* AnchorGroup.swift */; };
@@ -52,6 +53,14 @@
 		B46B85DC1E8CF36E006534F9 /* CollectionPrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46B85DA1E8CF36E006534F9 /* CollectionPrettyCell.swift */; };
 		B46B85DD1E8CF36E006534F9 /* CollectionPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B46B85DB1E8CF36E006534F9 /* CollectionPrettyCell.xib */; };
 		B46B85DF1E8CF88C006534F9 /* CollectionBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46B85DE1E8CF88C006534F9 /* CollectionBaseCell.swift */; };
+		B475871E1ED66FB6009B5887 /* IJKMediaFramework.framework in Sources */ = {isa = PBXBuildFile; fileRef = B462A0011ED66A0800D68BE5 /* IJKMediaFramework.framework */; };
+		B47587241ED672BC009B5887 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B47587231ED672BC009B5887 /* libbz2.tbd */; };
+		B47587261ED672CC009B5887 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B47587251ED672CC009B5887 /* libz.tbd */; };
+		B47587781ED6782F009B5887 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B462A0011ED66A0800D68BE5 /* IJKMediaFramework.framework */; };
+		B475877A1ED681E4009B5887 /* LiveTopCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47587791ED681E4009B5887 /* LiveTopCollectionView.swift */; };
+		B475877D1ED6821C009B5887 /* LiveTopCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B475877B1ED6821C009B5887 /* LiveTopCollectionViewCell.swift */; };
+		B475877E1ED6821C009B5887 /* LiveTopCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B475877C1ED6821C009B5887 /* LiveTopCollectionViewCell.xib */; };
+		B47587801ED6841C009B5887 /* YEAnimationTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B475877F1ED6841C009B5887 /* YEAnimationTool.swift */; };
 		B47766021E8E370800270ED8 /* RecommendGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47766011E8E370800270ED8 /* RecommendGameView.swift */; };
 		B47766041E8E371800270ED8 /* RecommendGameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B47766031E8E371800270ED8 /* RecommendGameView.xib */; };
 		B47766091E8E37CC00270ED8 /* CollectionGameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47766071E8E37CC00270ED8 /* CollectionGameCell.swift */; };
@@ -138,6 +147,11 @@
 		B4480F011E4C0864003D9FA6 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B4480F031E4C14CF003D9FA6 /* Root_HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Root_HomeViewController.swift; sourceTree = "<group>"; };
 		B4480F081E4C1698003D9FA6 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		B462A0011ED66A0800D68BE5 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		B462A0021ED66A0800D68BE5 /* YEDomain.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = YEDomain.bundle; sourceTree = "<group>"; };
+		B462A0051ED66B5100D68BE5 /* LFLiveKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LFLiveKit.framework; path = "../../../../Library/Developer/Xcode/DerivedData/YEDouYuZB-adnvcygbicdknugpsvmlpcxqzhho/Build/Products/Debug-iphonesimulator/LFLiveKit/LFLiveKit.framework"; sourceTree = "<group>"; };
+		B462A0071ED66B5800D68BE5 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../../Library/Developer/Xcode/DerivedData/YEDouYuZB-adnvcygbicdknugpsvmlpcxqzhho/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		B462A0091ED66B5E00D68BE5 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../Library/Developer/Xcode/DerivedData/YEDouYuZB-adnvcygbicdknugpsvmlpcxqzhho/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		B469773A1E53E7BE005078B9 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		B469773C1E53E7D6005078B9 /* BaseGameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseGameModel.swift; sourceTree = "<group>"; };
 		B469773E1E53E7EF005078B9 /* AnchorGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorGroup.swift; sourceTree = "<group>"; };
@@ -150,6 +164,16 @@
 		B46B85DA1E8CF36E006534F9 /* CollectionPrettyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionPrettyCell.swift; sourceTree = "<group>"; };
 		B46B85DB1E8CF36E006534F9 /* CollectionPrettyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionPrettyCell.xib; sourceTree = "<group>"; };
 		B46B85DE1E8CF88C006534F9 /* CollectionBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionBaseCell.swift; sourceTree = "<group>"; };
+		B47587231ED672BC009B5887 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		B47587251ED672CC009B5887 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B47587271ED672D7009B5887 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		B47587291ED672E1009B5887 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B475872B1ED672F4009B5887 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		B47587301ED6738B009B5887 /* YEDouYuZB-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YEDouYuZB-Bridging-Header.h"; sourceTree = "<group>"; };
+		B47587791ED681E4009B5887 /* LiveTopCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveTopCollectionView.swift; sourceTree = "<group>"; };
+		B475877B1ED6821C009B5887 /* LiveTopCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveTopCollectionViewCell.swift; sourceTree = "<group>"; };
+		B475877C1ED6821C009B5887 /* LiveTopCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LiveTopCollectionViewCell.xib; sourceTree = "<group>"; };
+		B475877F1ED6841C009B5887 /* YEAnimationTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YEAnimationTool.swift; sourceTree = "<group>"; };
 		B47766011E8E370800270ED8 /* RecommendGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendGameView.swift; sourceTree = "<group>"; };
 		B47766031E8E371800270ED8 /* RecommendGameView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendGameView.xib; sourceTree = "<group>"; };
 		B47766071E8E37CC00270ED8 /* CollectionGameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionGameCell.swift; sourceTree = "<group>"; };
@@ -180,6 +204,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B47587781ED6782F009B5887 /* IJKMediaFramework.framework in Frameworks */,
+				B47587261ED672CC009B5887 /* libz.tbd in Frameworks */,
+				B47587241ED672BC009B5887 /* libbz2.tbd in Frameworks */,
 				0C392E7DB52A16BA292B99D7 /* Pods_YEDouYuZB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +266,7 @@
 				B47CCBDA1E94905900BDBF2F /* Live.storyboard */,
 				B443939A1ED52D0900F285F1 /* Root_LiveViewController.swift */,
 				B40AED821ED5868F008ED334 /* Live_DetailViewController.swift */,
+				B47587301ED6738B009B5887 /* YEDouYuZB-Bridging-Header.h */,
 			);
 			path = Controlls;
 			sourceTree = "<group>";
@@ -250,6 +278,9 @@
 				B443939D1ED537E400F285F1 /* LiveListViewCell.xib */,
 				B40AED891ED58AB1008ED334 /* LiveTopView.swift */,
 				B40AED8B1ED58AC5008ED334 /* LiveTopView.xib */,
+				B47587791ED681E4009B5887 /* LiveTopCollectionView.swift */,
+				B475877B1ED6821C009B5887 /* LiveTopCollectionViewCell.swift */,
+				B475877C1ED6821C009B5887 /* LiveTopCollectionViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -279,6 +310,7 @@
 		B4480EAC1E4BFFD1003D9FA6 /* YEDouYuZB */ = {
 			isa = PBXGroup;
 			children = (
+				B462A0001ED66A0800D68BE5 /* Other */,
 				B47CCBE31E9490B500BDBF2F /* Room */,
 				B4365BD11E519E25009F5237 /* Libs */,
 				B4480F051E4C1661003D9FA6 /* Siwft_Category */,
@@ -495,6 +527,7 @@
 		B4480F001E4C0715003D9FA6 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				B475877F1ED6841C009B5887 /* YEAnimationTool.swift */,
 				B4D093551E4D52FA006F63DB /* Common.swift */,
 				B4365C291E51A3F2009F5237 /* NetworkTools.swift */,
 			);
@@ -530,11 +563,28 @@
 		B449E6642F37D0F7B831C874 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B475872B1ED672F4009B5887 /* MediaPlayer.framework */,
+				B47587291ED672E1009B5887 /* AudioToolbox.framework */,
+				B47587271ED672D7009B5887 /* VideoToolbox.framework */,
+				B47587251ED672CC009B5887 /* libz.tbd */,
+				B47587231ED672BC009B5887 /* libbz2.tbd */,
+				B462A0091ED66B5E00D68BE5 /* Alamofire.framework */,
+				B462A0071ED66B5800D68BE5 /* SwiftyJSON.framework */,
+				B462A0051ED66B5100D68BE5 /* LFLiveKit.framework */,
 				88050EC0EFFA08F90D477660 /* Pods_YEDouYuZB.framework */,
 				9530FB48084B55256EA1EC84 /* Pods_YEDouYuZBTests.framework */,
 				B310A777F646D70BF65F2B38 /* Pods_YEDouYuZBUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B462A0001ED66A0800D68BE5 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				B462A0011ED66A0800D68BE5 /* IJKMediaFramework.framework */,
+				B462A0021ED66A0800D68BE5 /* YEDomain.bundle */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 		B46977391E53E7A5005078B9 /* ViewModels */ = {
@@ -637,6 +687,7 @@
 					B4480EA91E4BFFD1003D9FA6 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = 4BKR5AQD46;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					B4480EC01E4BFFD2003D9FA6 = {
@@ -686,6 +737,7 @@
 				B47766041E8E371800270ED8 /* RecommendGameView.xib in Resources */,
 				B4480EE01E4C0227003D9FA6 /* Home.storyboard in Resources */,
 				B47CCBDC1E94905900BDBF2F /* Live.storyboard in Resources */,
+				B475877E1ED6821C009B5887 /* LiveTopCollectionViewCell.xib in Resources */,
 				B47CCBDF1E94906400BDBF2F /* Discover.storyboard in Resources */,
 				B4209C5B1E8F965000030408 /* AmuseHeadView.xib in Resources */,
 				B444576C1E8E01D200489431 /* RecommendCycleView.xib in Resources */,
@@ -693,6 +745,7 @@
 				B47CCBE21E94906E00BDBF2F /* Profile.storyboard in Resources */,
 				B4209C5F1E8F967600030408 /* CollectionAmuseHeadCell.xib in Resources */,
 				B44457701E8E026400489431 /* CollectionCycleCell.xib in Resources */,
+				B462A0041ED66A0800D68BE5 /* YEDomain.bundle in Resources */,
 				B40AED8C1ED58AC5008ED334 /* LiveTopView.xib in Resources */,
 				B48F534D1E55A51500496C54 /* CollectionHeaderView.xib in Resources */,
 			);
@@ -767,9 +820,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B475871E1ED66FB6009B5887 /* IJKMediaFramework.framework in Sources */,
 				B4D093561E4D52FA006F63DB /* Common.swift in Sources */,
 				B47766021E8E370800270ED8 /* RecommendGameView.swift in Sources */,
 				B4480F021E4C0864003D9FA6 /* MainViewController.swift in Sources */,
+				B47587801ED6841C009B5887 /* YEAnimationTool.swift in Sources */,
 				B46977411E53E7FF005078B9 /* AnchorModel.swift in Sources */,
 				B49405BD1E543A8D009C1CBD /* BaseViewController.swift in Sources */,
 				B47CCBE51E9490F600BDBF2F /* RoomShowViewController.swift in Sources */,
@@ -778,6 +833,7 @@
 				B4D093621E4DA949006F63DB /* FunnyViewController.swift in Sources */,
 				B444576F1E8E026400489431 /* CollectionCycleCell.swift in Sources */,
 				B49405BF1E543AA8009C1CBD /* BaseAnchorViewController.swift in Sources */,
+				B475877D1ED6821C009B5887 /* LiveTopCollectionViewCell.swift in Sources */,
 				B4D0935A1E4D53D3006F63DB /* PageContentView.swift in Sources */,
 				B46977451E53F52A005078B9 /* CycleModel.swift in Sources */,
 				B469773D1E53E7D6005078B9 /* BaseGameModel.swift in Sources */,
@@ -798,6 +854,7 @@
 				B4480EAE1E4BFFD1003D9FA6 /* AppDelegate.swift in Sources */,
 				B4D093601E4DA936006F63DB /* AmuseViewController.swift in Sources */,
 				B4209C531E8F523C00030408 /* GameViewModel.swift in Sources */,
+				B475877A1ED681E4009B5887 /* LiveTopCollectionView.swift in Sources */,
 				B4D093581E4D53B7006F63DB /* PageTitleView.swift in Sources */,
 				B443939B1ED52D0900F285F1 /* Root_LiveViewController.swift in Sources */,
 				B4480F041E4C14CF003D9FA6 /* Root_HomeViewController.swift in Sources */,
@@ -999,7 +1056,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 4BKR5AQD46;
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/YEDouYuZB/Other",
@@ -1007,8 +1066,23 @@
 				INFOPLIST_FILE = YEDouYuZB/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"Kingfisher\"",
+					"-framework",
+					"\"LFLiveKit\"",
+					"-framework",
+					"\"MJRefresh\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = yongen.YEDouYuZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YEDouYuZB/Live/Controlls/YEDouYuZB-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1020,7 +1094,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 4BKR5AQD46;
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/YEDouYuZB/Other",
@@ -1028,8 +1104,25 @@
 				INFOPLIST_FILE = YEDouYuZB/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"Kingfisher\"",
+					"-framework",
+					"\"LFLiveKit\"",
+					"-framework",
+					"\"MJRefresh\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-ObjC",
+					"-all_load",
+					_OBJC_CLASS,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = yongen.YEDouYuZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YEDouYuZB/Live/Controlls/YEDouYuZB-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

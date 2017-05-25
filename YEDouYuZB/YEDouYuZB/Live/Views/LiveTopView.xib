@@ -39,7 +39,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="snc-8g-MUU" firstAttribute="leading" secondItem="E8C-FC-Chf" secondAttribute="leading" constant="5" id="2tf-NH-aJZ"/>
                         <constraint firstAttribute="height" constant="50" id="3Mj-9I-Ps4"/>
@@ -50,13 +50,13 @@
                         <constraint firstItem="snc-8g-MUU" firstAttribute="top" secondItem="E8C-FC-Chf" secondAttribute="top" constant="5" id="yPy-X8-gcy"/>
                     </constraints>
                 </view>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="02B-D1-FcN">
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="02B-D1-FcN" customClass="LiveTopCollectionView" customModule="YEDouYuZB" customModuleProvider="target">
                     <rect key="frame" x="115" y="15" width="167" height="50"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="MvK-L7-gUj"/>
                     </constraints>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="BNi-QG-1KR">
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="BNi-QG-1KR">
                         <size key="itemSize" width="50" height="50"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -71,9 +71,6 @@
                         <constraint firstAttribute="height" constant="35" id="I6c-br-SJe"/>
                     </constraints>
                     <state key="normal" title="关闭"/>
-                    <connections>
-                        <action selector="backClickAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="kcR-jD-YNi"/>
-                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017.5.24" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K55-TW-yIJ">
                     <rect key="frame" x="204" y="85" width="58" height="20"/>
@@ -85,7 +82,7 @@
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="02B-D1-FcN" firstAttribute="leading" secondItem="E8C-FC-Chf" secondAttribute="trailing" constant="8" id="7Mw-cP-pTb"/>
                 <constraint firstAttribute="trailing" secondItem="D5X-Sc-Y4K" secondAttribute="trailing" constant="20" id="7Nq-jj-cww"/>
@@ -100,6 +97,7 @@
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="backBtn" destination="D5X-Sc-Y4K" id="MZb-Xv-kqM"/>
                 <outlet property="topCollectionView" destination="02B-D1-FcN" id="I0d-Ro-j8H"/>
                 <outlet property="topIcon" destination="snc-8g-MUU" id="rq9-VA-W2Y"/>
             </connections>

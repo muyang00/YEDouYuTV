@@ -10,7 +10,7 @@ import UIKit
 
 private let kLiveListCell = "kLiveListCell"
 
-class Root_LiveViewController: UIViewController {
+class Root_LiveViewController: BaseViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -27,7 +27,11 @@ class Root_LiveViewController: UIViewController {
 
 //MARK:- UI页面设置
 extension Root_LiveViewController {
-    func setupUI() {
+   override func setupUI() {
+    
+      //0.
+       contentView = tableView
+    
         //1.不要调整内边距
         automaticallyAdjustsScrollViewInsets = false
         
@@ -36,7 +40,9 @@ extension Root_LiveViewController {
         tableView.rowHeight = 466
         tableView.register(UINib(nibName: "LiveListViewCell", bundle: nil), forCellReuseIdentifier: kLiveListCell)
         view.addSubview(tableView)
-        
+    
+       super.setupUI()
+    
     }
 }
 //MARK:- 数据请求处理
@@ -47,6 +53,7 @@ extension Root_LiveViewController {
           
             self.tableView.reloadData()
             
+            self.loadDataFinished()
         }
     
         
