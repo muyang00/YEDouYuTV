@@ -122,9 +122,7 @@ extension Live_DetailViewController {
         print("快进")
     case .seekingBackward:
         print("快退")
-        
-    default:
-        print("")
+
     }
         
     }

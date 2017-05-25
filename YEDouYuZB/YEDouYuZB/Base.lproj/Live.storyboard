@@ -32,10 +32,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="lJP-cx-4xv" firstAttribute="top" secondItem="aCB-gP-aaX" secondAttribute="bottom" id="9il-Ug-A7i"/>
-                            <constraint firstAttribute="trailing" secondItem="aCB-gP-aaX" secondAttribute="trailing" id="AFt-iE-N1g"/>
-                            <constraint firstItem="aCB-gP-aaX" firstAttribute="top" secondItem="1qX-TL-YTR" secondAttribute="bottom" id="bRL-4b-qdz"/>
-                            <constraint firstItem="aCB-gP-aaX" firstAttribute="leading" secondItem="SfM-8z-fZh" secondAttribute="leading" id="x3s-BW-Rov"/>
+                            <constraint firstItem="lJP-cx-4xv" firstAttribute="top" secondItem="aCB-gP-aaX" secondAttribute="bottom" id="6zc-Sh-dqs"/>
+                            <constraint firstAttribute="trailing" secondItem="aCB-gP-aaX" secondAttribute="trailing" id="SAr-NO-bAz"/>
+                            <constraint firstItem="aCB-gP-aaX" firstAttribute="leading" secondItem="SfM-8z-fZh" secondAttribute="leading" id="UfV-Au-vOJ"/>
+                            <constraint firstItem="aCB-gP-aaX" firstAttribute="top" secondItem="1qX-TL-YTR" secondAttribute="bottom" id="oHY-Ui-EOB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="视频列表" id="yD9-N9-1a0"/>
