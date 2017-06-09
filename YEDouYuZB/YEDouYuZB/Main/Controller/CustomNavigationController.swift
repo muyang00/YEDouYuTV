@@ -31,10 +31,14 @@ class CustomNavigationController: UINavigationController {
         let targets = systemGes.value(forKey: "_targets") as? [NSObject]
         guard let targetObjc = targets?.first else { return }
         
+        print(targetObjc)
+        //(action=handleNavigationTransition:, target=<_UINavigationInteractiveTransition 0x7fe266d205a0>)
+        
         //3.2 取出target
         guard let target = targetObjc.value(forKey: "target") else {
             return
         }
+        
         //3.3取出Action
         let action = Selector(("handleNavigationTransition:"))
         //4.

@@ -7,14 +7,14 @@
 //
 
 import UIKit
-import IJKMediaFramework
+//import IJKMediaFramework
 
 class Live_DetailViewController: UIViewController {
 
     var anchorModel : LiveModel!
     
     fileprivate lazy var topView : LiveTopView = LiveTopView.topView()
-    var ijkplayer : IJKFFMoviePlayerController!
+  //  var ijkplayer : IJKFFMoviePlayerController!
     
     
     override func viewWillAppear(_ animated: Bool) {
@@ -23,8 +23,8 @@ class Live_DetailViewController: UIViewController {
         self.topView.isHidden = true
         YEAnimationTool.share.showAnimation(view: self.view)
         
-        NotificationCenter.default.addObserver(self, selector: #selector(playbackStateDidChange(noti:)), name: NSNotification.Name.IJKMPMoviePlayerPlaybackStateDidChange, object: nil)
-        self.ijkplayer.prepareToPlay()
+    //    NotificationCenter.default.addObserver(self, selector: #selector(playbackStateDidChange(noti:)), name: NSNotification.Name.IJKMPMoviePlayerPlaybackStateDidChange, object: nil)
+    //    self.ijkplayer.prepareToPlay()
         
 
     }
@@ -32,7 +32,7 @@ class Live_DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupUI()
+       // setupUI()
         
     }
     
@@ -43,14 +43,14 @@ class Live_DetailViewController: UIViewController {
         YEAnimationTool.share.dismissAnimation({})
         YEAnimationTool.share.removeCycleTimer()
         
-        if self.ijkplayer != nil {
-            self.ijkplayer.pause()
-            self.ijkplayer.stop()
-            self.ijkplayer.shutdown()
-        }
+//        if self.ijkplayer != nil {
+//            self.ijkplayer.pause()
+//            self.ijkplayer.stop()
+//            self.ijkplayer.shutdown()
+//        }
     }
 }
-
+ /*
 extension Live_DetailViewController {
     fileprivate func setupUI() {
         
@@ -60,7 +60,7 @@ extension Live_DetailViewController {
 //        IJKFFMoviePlayerController.setLogReport(false)
 //        IJKFFMoviePlayerController.setLogLevel(k_IJK_LOG_INFO)
     
-      // 1.
+      1.
         let options = IJKFFOptions.byDefault()
         
         ijkplayer = IJKFFMoviePlayerController(contentURL: requesturl, with: options)
@@ -127,4 +127,4 @@ extension Live_DetailViewController {
         
     }
 }
-
+*/
